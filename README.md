@@ -39,35 +39,19 @@ Model, aşağıdaki katman yapısına sahiptir:
 ### CNN Katmanları
 
 1. **Convolutional Block 1**
-   - Conv2d: 3 → 32 kanal, 3x3 kernel
-   - Batch Normalization
-   - ReLU aktivasyon
-   - Max Pooling (2x2)
+
 
 2. **Convolutional Block 2**
-   - Conv2d: 32 → 64 kanal, 3x3 kernel
-   - Batch Normalization
-   - ReLU aktivasyon
-   - Max Pooling (2x2)
+ 
 
 3. **Convolutional Block 3**
-   - Conv2d: 64 → 128 kanal, 3x3 kernel
-   - Batch Normalization
-   - ReLU aktivasyon
-   - Max Pooling (2x2)
+   
 
 4. **Convolutional Block 4**
-   - Conv2d: 128 → 256 kanal, 3x3 kernel
-   - Batch Normalization
-   - ReLU aktivasyon
-   - Max Pooling (2x2)
+  
 
 5. **Fully Connected Layers**
-   - Linear: 256×14×14 → 512
-   - Dropout (0.5)
-   - Linear: 512 → 128
-   - Dropout (0.5)
-   - Linear: 128 → 2 (sınıf sayısı)
+  
 
 ### Model Özellikleri
 
