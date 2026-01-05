@@ -1,6 +1,4 @@
-# 📋 Projeyi Çalıştırma - Adım Adım Rehber
-
-## 🎯 Hızlı Başlangıç (En Kolay)
+# Projeyi Çalıştırma - Adım Adım Rehber
 
 ### Yöntem 1: Otomatik Script
 
@@ -14,7 +12,7 @@
 
 ### Adım 1: Terminal Açın
 
-**Windows'ta:**
+**Windows:**
 - `Windows + R` tuşlarına basın
 - `powershell` yazın ve Enter'a basın
 - VEYA `cmd` yazın ve Enter'a basın
@@ -44,7 +42,7 @@ python train.py
 
 ---
 
-## 📊 Ne Göreceksiniz?
+## Ne Göreceksiniz?
 
 ### Terminal Çıktısı:
 
@@ -87,7 +85,7 @@ Epoch 1 Summary:
 
 ---
 
-## 🔮 Tahmin Yapma (Model Eğitildikten Sonra)
+## Tahmin Yapma (Model Eğitildikten Sonra)
 
 ### Yöntem 1: Otomatik Script
 
@@ -129,15 +127,15 @@ Class Probabilities:
 
 ---
 
-## 📁 Proje Klasör Yapısı
+## Proje Klasör Yapısı
 
 ```
 C:\sinir aglari\
 ├── dataset/                    # Veri seti (buraya dokunmayın)
-├── models/                     # Eğitilmiş modeller (otomatik oluşur)
+├── models/                     # Eğitilmiş modeller 
 │   └── brain_tumor_cnn.pth
-├── BASLAT.bat                  # ⭐ Eğitimi başlatmak için
-├── TAHMIN_YAP.bat              # ⭐ Tahmin yapmak için
+├── BASLAT.bat                  #  Eğitimi başlatmak için
+├── TAHMIN_YAP.bat              #  Tahmin yapmak için
 ├── train.py                    # Eğitim scripti
 ├── predict.py                   # Tahmin scripti
 ├── model.py                    # CNN modeli
@@ -147,7 +145,7 @@ C:\sinir aglari\
 
 ---
 
-## ❓ Sık Sorulan Sorular
+## Sık Sorulan Sorular
 
 ### Q: "ModuleNotFoundError: No module named 'torch'" hatası alıyorum
 
@@ -172,7 +170,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎯 Özet - Hızlı Komutlar
+## Özet - Hızlı Komutlar
 
 ```bash
 # 1. Proje klasörüne git
