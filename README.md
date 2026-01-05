@@ -75,7 +75,7 @@ conda activate brain_tumor_cnn
 ### 2. Pip ile Kurulum (Alternatif)
 
 ```bash
-# Python virtual environment oluştur (opsiyonel)
+# Python virtual environment oluştur 
 python -m venv venv
 
 # Virtual environment'ı aktifleştir
@@ -116,7 +116,7 @@ python train.py
 
 ```bash
 # Windows'ta
-BASLAT.bat   (Yönetici olarak calistir.)
+BASLAT.bat
 ```
 
 Eğitim sırasında:
@@ -142,7 +142,7 @@ python predict.py --image dataset/yes/Y1.jpg
 
 ```bash
 # Windows'ta
-TAHMIN_YAP.bat
+TAHMIN_YAP.bat (Yönetici olarak calistir.)
 ```
 
 ### Görselleştirmeleri Yeniden Oluşturma
@@ -229,12 +229,12 @@ Bu script, eğitilmiş modeli kullanarak tüm görselleştirmeleri oluşturur.
 ├── BASLAT.bat                    # Otomatik eğitim scripti (Windows)
 ├── TAHMIN_YAP.bat                # Otomatik tahmin scripti (Windows)
 │
-├── training_history.png          # Eğitim grafikleri (otomatik oluşturulur)
-├── confusion_matrix.png          # Karışıklık matrisi (otomatik oluşturulur)
-├── roc_curve.png                 # ROC eğrisi (otomatik oluşturulur)
-├── precision_recall_curve.png    # Precision-Recall eğrisi (otomatik oluşturulur)
-├── class_distribution.png        # Sınıf dağılımı (otomatik oluşturulur)
-└── sample_predictions.png        # Örnek tahminler (otomatik oluşturulur)
+├── training_history.png          # Eğitim grafikleri 
+├── confusion_matrix.png          # Karışıklık matrisi 
+├── roc_curve.png                 # ROC eğrisi 
+├── precision_recall_curve.png    # Precision-Recall eğrisi 
+├── class_distribution.png        # Sınıf dağılımı 
+└── sample_predictions.png        # Örnek tahminler 
 ```
 
 ##  Gereksinimler
@@ -278,12 +278,10 @@ config = {
 - **Tüm görselleştirmeler otomatik olarak oluşturulur**
 - Veri seti dengesizse, class weights kullanılabilir
 - Data augmentation model performansını artırır
-- Görseller proje ana klasörüne kaydedilir (kolay erişim için)
+- Görseller proje ana klasörüne kaydedilir 
 
 ##  Görselleştirme Özellikleri
 
--  **Türkçe etiketler ve açıklamalar**
--  **Profesyonel ve renkli grafikler**
 -  **Kaggle benzeri çıktılar**
 -  **Yüksek çözünürlüklü görseller (300 DPI)**
 -  **Detaylı metrik gösterimleri**
