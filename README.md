@@ -153,12 +153,12 @@ python create_visualizations.py
 
 Bu script, eğitilmiş modeli kullanarak tüm görselleştirmeleri oluşturur.
 
-### Veri Seti İstatistikleri
-
+### Veri Seti ve İstatistikleri
+- Veri Setini İndirin: https://www.kaggle.com/code/martinsertin/brain-tumor-detection/input
 - **Toplam Görüntü**: ~500+ görüntü
 - **Sınıf Dağılımı**:
-  - Tümör Var (yes): ~310 görüntü
-  - Tümör Yok (no): ~196 görüntü
+- Tümör Var (yes): ~310 görüntü
+- Tümör Yok (no): ~196 görüntü
 - **Format**: JPG, JPEG, PNG
 - **Boyut**: Değişken (model 224×224'e resize eder)
 
@@ -288,8 +288,5 @@ config = {
 
 Bu proje eğitim amaçlıdır. İyileştirmeler ve öneriler için issue açabilirsiniz.
 
-## GitHub Repository
-
-[GitHub Repository Linki](https://github.com/yourusername/brain-tumor-cnn)
 
 
