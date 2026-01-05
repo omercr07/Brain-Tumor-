@@ -116,7 +116,7 @@ python train.py
 
 ```bash
 # Windows'ta
-BASLAT.bat
+BASLAT.bat   (Yönetici olarak calistir.)
 ```
 
 Eğitim sırasında:
