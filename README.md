@@ -27,8 +27,6 @@ KODDA GECEN "\yes\Y1.jpg" KISMI DEGISKEN OLUP CALISMA YAPMAK ISTEDIGIMIZ GORSELI
 -  Batch Normalization ve Dropout ile regularizasyon
 -  Data augmentation ile model performansının artırılması
 -  Eğitim, validasyon ve test seti ayrımı
--  **Detaylı görselleştirmeler (Türkçe etiketlerle)**
--  **Kaggle benzeri profesyonel çıktılar**
 -  Tek görüntü tahmini için hazır script
 -  Otomatik görselleştirme oluşturma
 
