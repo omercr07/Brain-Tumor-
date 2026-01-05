@@ -8,7 +8,7 @@
 
 ---
 
-## 🔧 Manuel Yöntem (Terminal)
+## Manuel Yöntem (Terminal)
 
 ### Adım 1: Terminal Açın
 
