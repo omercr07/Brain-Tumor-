@@ -1,8 +1,8 @@
-# 🚀 Projeyi Çalıştırma Rehberi
+# Projeyi Çalıştırma Rehberi
 
 Bu dosya, projeyi adım adım nasıl çalıştıracağınızı gösterir.
 
-## 📋 Hızlı Başlangıç (Windows)
+## Hızlı Başlangıç (Windows)
 
 ### Yöntem 1: Otomatik Script (Önerilen)
 
@@ -40,7 +40,7 @@ conda activate brain_tumor_cnn
 python train.py
 ```
 
-## 📊 Çıktıları Nerede Göreceksiniz?
+## Çıktıları Nerede Göreceksiniz?
 
 ### 1. Terminal/Console Çıktısı
 
@@ -109,11 +109,11 @@ Training history saved to training_history.png
 
 Eğitim tamamlandıktan sonra şu dosyalar oluşacak:
 
-#### 📁 `models/` klasörü
+#### `models/` klasörü
 - **`brain_tumor_cnn.pth`**: Eğitilmiş model dosyası
   - Bu dosyayı `predict.py` ile kullanabilirsiniz
 
-#### 📊 `training_history.png`
+#### `training_history.png`
 - Eğitim ve validation loss grafikleri
 - Eğitim ve validation accuracy grafikleri
 - Bu dosyayı herhangi bir görüntüleyici ile açabilirsiniz
@@ -126,7 +126,7 @@ Eğitim tamamlandıktan sonra şu dosyalar oluşacak:
 - En iyi validation accuracy
 - Eğitim konfigürasyonu
 
-## 🔮 Tahmin Yapma (Model Eğitildikten Sonra)
+## Tahmin Yapma (Model Eğitildikten Sonra)
 
 Model eğitildikten sonra, yeni görüntüler üzerinde tahmin yapabilirsiniz:
 
@@ -172,7 +172,7 @@ python predict.py --image dataset/yes/Y10.jpg
 python predict.py --image dataset/no/1\ no.jpeg
 ```
 
-## ⚠️ Sorun Giderme
+## Sorun Giderme
 
 ### Problem 1: "conda: command not found"
 
@@ -202,19 +202,19 @@ pip install -r requirements.txt
 
 **Çözüm**: `dataset/` klasörünün proje kök dizininde olduğundan emin olun.
 
-## 📈 Eğitim Süresi
+## Eğitim Süresi
 
 - **CPU**: ~2-4 saat (30 epoch)
 - **GPU (NVIDIA)**: ~10-30 dakika (30 epoch)
 
-## 🎯 Sonraki Adımlar
+## Sonraki Adımlar
 
-1. ✅ Modeli eğitin (`python train.py`)
-2. ✅ `training_history.png` dosyasını kontrol edin
-3. ✅ Test sonuçlarını inceleyin
-4. ✅ Yeni görüntülerle tahmin yapın (`python predict.py`)
+1. Modeli eğitin (`python train.py`)
+2. `training_history.png` dosyasını kontrol edin
+3. Test sonuçlarını inceleyin
+4. Yeni görüntülerle tahmin yapın (`python predict.py`)
 
-## 💡 İpuçları
+## İpuçları
 
 - İlk eğitimde epoch sayısını azaltabilirsiniz (test için):
   ```python
