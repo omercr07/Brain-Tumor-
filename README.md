@@ -1,8 +1,8 @@
-# 🧠 Beyin Tümörü Tespiti - CNN Projesi
+# Beyin Tümörü Tespiti - CNN Projesi
 
 Bu proje, PyTorch kullanılarak geliştirilmiş bir **Convolutional Neural Network (CNN)** modeli ile beyin tümörü tespiti yapmaktadır. Model, MRI görüntülerinden tümör varlığını tespit etmek için eğitilmiştir.
 
-## 📋 İçindekiler
+## İçindekiler
 
 - [Proje Hakkında](#proje-hakkında)
 - [Model Mimarisi](#model-mimarisi)
@@ -14,9 +14,12 @@ Bu proje, PyTorch kullanılarak geliştirilmiş bir **Convolutional Neural Netwo
 - [Proje Yapısı](#proje-yapısı)
 - [Gereksinimler](#gereksinimler)
 
-## 🎯 Proje Hakkında
+##  Proje Hakkında
 
 Bu proje, derin öğrenme teknikleri kullanarak beyin MRI görüntülerinde tümör tespiti yapan bir CNN modeli içermektedir. Model, binary classification (ikili sınıflandırma) yaparak görüntüleri "Tümör Var" veya "Tümör Yok" olarak sınıflandırır.
+
+*** ONEMLI NOT: PROJEYI CALISTIRMAK ICIN TAHMIN_YAP.bat DOSYASINI YONETICI OLARAK CALISTIRIP  "dataset\yes\Y1.jpg" KODUNU YAZARAK ISTEDIGINIZ GORSEL HAKKINDA TUMOR DURUMUNU VE GEREKLI TAVSIYLERI GOREBILIRSINIZ.
+KODDA GECEN "\yes\Y1.jpg" KISMI DEGISKEN OLUP CALISMA YAPMAK ISTEDIGIMIZ GORSELIN YOLUNU (PATH) GIREREK GEREKLI SONUCLARA ULASABILIRSINIZ.
 
 ### Özellikler
 
@@ -29,7 +32,7 @@ Bu proje, derin öğrenme teknikleri kullanarak beyin MRI görüntülerinde tüm
 - ✅ Tek görüntü tahmini için hazır script
 - ✅ Otomatik görselleştirme oluşturma
 
-## 🏗️ Model Mimarisi
+## Model Mimarisi
 
 Model, aşağıdaki katman yapısına sahiptir:
 
@@ -73,7 +76,7 @@ Model, aşağıdaki katman yapısına sahiptir:
 - **Toplam Parametre**: ~15-20M (yaklaşık)
 - **Regularizasyon**: BatchNorm + Dropout
 
-## 🚀 Kurulum
+## Kurulum
 
 ### 1. Conda Environment Oluşturma
 
@@ -115,7 +118,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 # Linux/Mac için PyTorch resmi sitesinden uygun komutu kullanın
 ```
 
-## 💻 Kullanım
+## Kullanım
 
 ### Model Eğitimi
 
@@ -168,35 +171,6 @@ python create_visualizations.py
 
 Bu script, eğitilmiş modeli kullanarak tüm görselleştirmeleri oluşturur.
 
-### Gelişmiş Kullanım
-
-```bash
-# Özel model yolu ile tahmin
-python predict.py --image image.jpg --model models/my_model.pth
-
-# CPU kullanımı (GPU varsa bile)
-python predict.py --image image.jpg --device cpu
-```
-
-## 📊 Veri Seti
-
-Veri seti yapısı:
-
-```
-dataset/
-├── yes/              # Tümör olan görüntüler
-│   ├── Y1.jpg
-│   ├── Y2.jpg
-│   └── ...
-├── no/               # Tümör olmayan görüntüler
-│   ├── 1 no.jpg
-│   ├── 2 no.jpg
-│   └── ...
-└── brain_tumor_dataset/
-    ├── yes/
-    └── no/
-```
-
 ### Veri Seti İstatistikleri
 
 - **Toplam Görüntü**: ~500+ görüntü
@@ -212,68 +186,46 @@ dataset/
 - **Validation Set**: %10 (training'in %10'u)
 - **Test Set**: %20
 
-## 📈 Görselleştirmeler
-
-Eğitim tamamlandıktan sonra, proje ana klasöründe aşağıdaki görselleştirmeler otomatik olarak oluşturulur:
+## Görselleştirmeler
 
 ### 1. Eğitim Geçmişi (`training_history.png`)
 - Eğitim ve doğrulama loss grafikleri
 - Eğitim ve doğrulama accuracy grafikleri
 - Türkçe etiketler ve açıklamalar
+<img width="4772" height="1769" alt="training_historyy" src="https://github.com/user-attachments/assets/210832df-2cdf-499d-83c1-3a4efe7b4ab3" />
 
 ### 2. Karışıklık Matrisi (`confusion_matrix.png`)
 - Renkli görsel tablo
 - Doğru ve yanlış tahminlerin görselleştirilmesi
 - Türkçe sınıf isimleri
+<img width="2811" height="2379" alt="confusionn_matrix" src="https://github.com/user-attachments/assets/8875b8bb-398b-40ff-a647-2737b3a1be1c" />
 
 ### 3. ROC Eğrisi (`roc_curve.png`)
 - ROC (Receiver Operating Characteristic) eğrisi
 - AUC (Area Under Curve) değeri
 - Model performansının görsel analizi
+<img width="2967" height="2365" alt="roc_curvee" src="https://github.com/user-attachments/assets/14586d3c-6c2e-4cab-a4d7-9a38ca80030a" />
 
 ### 4. Precision-Recall Eğrisi (`precision_recall_curve.png`)
 - Precision ve Recall arasındaki ilişki
 - Ortalama Precision değeri
 - Dengesiz veri setleri için önemli metrik
+<img width="2966" height="2364" alt="precision_recall_curve" src="https://github.com/user-attachments/assets/8188cfe8-4269-49cb-9004-7b03e4ece40c" />
 
 ### 5. Sınıf Dağılımı (`class_distribution.png`)
 - Veri setindeki sınıf dağılımı
 - Görsel çubuk grafik
 - Yüzde ve sayı bilgileri
+<img width="2966" height="1768" alt="class_distribution" src="https://github.com/user-attachments/assets/a4dda4cb-ce10-4c3c-8c24-e9b4c689afc0" />
 
 ### 6. Örnek Tahminler (`sample_predictions.png`)
 - Test setinden örnek görüntüler
 - Gerçek ve tahmin edilen sınıflar
 - Güven skorları
 - Doğru/yanlış tahminlerin renkli gösterimi
+<img width="4568" height="2403" alt="sample_predictions" src="https://github.com/user-attachments/assets/eb23c714-6061-4e1a-859b-b72daa45a30b" />
 
-**Tüm görseller Türkçe etiketler ve açıklamalar içerir!**
-
-## 📊 Sonuçlar
-
-### Eğitim Metrikleri
-
-Model eğitimi tamamlandıktan sonra aşağıdaki metrikler gösterilir:
-
-- **Training Loss & Accuracy**: Her epoch için
-- **Validation Loss & Accuracy**: Her epoch için
-- **Test Accuracy**: Final model performansı
-- **Classification Report**: Precision, Recall, F1-Score
-- **Confusion Matrix**: Sınıflandırma detayları
-- **ROC AUC**: ROC eğrisi altındaki alan
-- **Average Precision**: Precision-Recall eğrisi altındaki alan
-
-### Beklenen Performans
-
-- **Validation Accuracy**: %85-95 arası
-- **Test Accuracy**: %70-85 arası
-- **Training Time**: 
-  - CPU'da: 1-3 saat (30 epoch)
-  - GPU'da: ~10-30 dakika (30 epoch)
-
-*Not: Gerçek sonuçlar veri seti ve eğitim parametrelerine bağlı olarak değişebilir.*
-
-## 📁 Proje Yapısı
+##  Proje Yapısı
 
 ```
 .
@@ -301,7 +253,7 @@ Model eğitimi tamamlandıktan sonra aşağıdaki metrikler gösterilir:
 └── sample_predictions.png        # Örnek tahminler (otomatik oluşturulur)
 ```
 
-## 📦 Gereksinimler
+##  Gereksinimler
 
 ### Python Paketleri
 
@@ -321,7 +273,7 @@ Model eğitimi tamamlandıktan sonra aşağıdaki metrikler gösterilir:
 - **GPU**: Opsiyonel ama önerilir (CUDA destekli)
 - **Disk**: ~2GB (veri seti + model + görseller)
 
-## 🔧 Yapılandırma
+##  Yapılandırma
 
 Eğitim parametrelerini `train.py` dosyasındaki `config` dictionary'sinden değiştirebilirsiniz:
 
@@ -335,7 +287,7 @@ config = {
 }
 ```
 
-## 📝 Notlar
+##  Notlar
 
 - Model eğitimi GPU'da çok daha hızlı olacaktır
 - Eğitim sırasında en iyi model otomatik olarak kaydedilir
@@ -344,28 +296,20 @@ config = {
 - Data augmentation model performansını artırır
 - Görseller proje ana klasörüne kaydedilir (kolay erişim için)
 
-## 🎨 Görselleştirme Özellikleri
+##  Görselleştirme Özellikleri
 
-- ✅ **Türkçe etiketler ve açıklamalar**
-- ✅ **Profesyonel ve renkli grafikler**
-- ✅ **Kaggle benzeri çıktılar**
-- ✅ **Yüksek çözünürlüklü görseller (300 DPI)**
-- ✅ **Detaylı metrik gösterimleri**
+-  **Türkçe etiketler ve açıklamalar**
+-  **Profesyonel ve renkli grafikler**
+-  **Kaggle benzeri çıktılar**
+-  **Yüksek çözünürlüklü görseller (300 DPI)**
+-  **Detaylı metrik gösterimleri**
 
-## 🤝 Katkıda Bulunma
+##  Katkıda Bulunma
 
 Bu proje eğitim amaçlıdır. İyileştirmeler ve öneriler için issue açabilirsiniz.
 
-## 📄 Lisans
-
-Bu proje eğitim amaçlıdır.
-
-## 🔗 GitHub Repository
+## GitHub Repository
 
 [GitHub Repository Linki](https://github.com/yourusername/brain-tumor-cnn)
 
----
 
-**Not**: Bu model sadece eğitim ve araştırma amaçlıdır. Tıbbi teşhis için kullanılmamalıdır.
-
-**Son Güncelleme**: Tüm görselleştirmeler Türkçe etiketlerle güncellenmiştir. Kaggle benzeri profesyonel çıktılar eklendi.
