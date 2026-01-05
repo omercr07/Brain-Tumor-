@@ -1,15 +1,15 @@
-# 🖥️ Terminal Komutları - Kısa Rehber
+# Terminal Komutları - Kısa Rehber
 
-## 📍 Adım 1: Terminal Aç
+##  Adım 1: Terminal Aç
 - `Windows + R` → `powershell` yaz → Enter
 - VEYA `Windows + R` → `cmd` yaz → Enter
 
-## 📍 Adım 2: Proje Klasörüne Git
+## Adım 2: Proje Klasörüne Git
 ```bash
 cd "C:\sinir aglari"
 ```
 
-## 📍 Adım 3: Modeli Eğit
+## Adım 3: Modeli Eğit
 ```bash
 python train.py
 ```
@@ -18,14 +18,14 @@ python train.py
 - `models/brain_tumor_cnn.pth` → Model dosyası
 - `training_history.png` → Grafikler
 
-## 📍 Adım 4: Tahmin Yap (Eğitimden Sonra)
+## Adım 4: Tahmin Yap (Eğitimden Sonra)
 ```bash
 python predict.py --image dataset/yes/Y1.jpg
 ```
 
 ---
 
-## ⚡ Hızlı Komutlar
+## Hızlı Komutlar
 
 ```bash
 # 1. Klasöre git
@@ -40,7 +40,7 @@ python predict.py --image dataset/yes/Y1.jpg
 
 ---
 
-## 🔧 Sorun Çıkarsa
+## Sorun Çıkarsa
 
 **"ModuleNotFoundError" hatası:**
 ```bash
