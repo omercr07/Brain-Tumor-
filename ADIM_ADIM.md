@@ -115,7 +115,7 @@ Class Probabilities:
 
 ---
 
-## ⏱️ Eğitim Süresi
+## Eğitim Süresi
 
 - **CPU**: 1-3 saat (30 epoch)
 - **GPU**: 10-30 dakika (30 epoch)
