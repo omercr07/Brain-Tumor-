@@ -162,11 +162,29 @@ Bu script, eğitilmiş modeli kullanarak tüm görselleştirmeleri oluşturur.
 - **Format**: JPG, JPEG, PNG
 - **Boyut**: Değişken (model 224×224'e resize eder)
 
+   Veri Seti Yapisi:
+
+   dataset/
+    ├── yes/              (Tumor olan goruntuler)
+    ├── no/               (Tumor olmayan goruntuler)
+    └── brain_tumor_dataset/
+        ├── yes/
+        └── no/
+
 ### Veri Bölünmesi
 
 - **Training Set**: %70
 - **Validation Set**: %10 (training'in %10'u)
 - **Test Set**: %20
+
+Veri Onisleme:
+    - Resize: 224 x 224 piksel
+    - Normalizasyon: ImageNet standartlari
+      (mean: [0.485, 0.456, 0.406], std: [0.229, 0.224, 0.225])
+    - Data Augmentation (Egitim icin):
+      * Random Horizontal Flip (p=0.5)
+      * Random Rotation (15 derece)
+      * Color Jitter (brightness=0.2, contrast=0.2)
 
 ## Görselleştirmeler
 
