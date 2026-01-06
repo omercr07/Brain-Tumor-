@@ -171,6 +171,7 @@ Bu script, eğitilmiş modeli kullanarak tüm görselleştirmeleri oluşturur.
         ├── yes/
         └── no/
 
+
 ### Veri Bölünmesi
 
 - **Training Set**: %70
